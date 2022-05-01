@@ -9,13 +9,25 @@ npm install react-native-multiple-launch-icon
 ```
 
 ## Usage
-
+Add the activity name and icon 
+```xml
+  <activity-alias
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:name=".RED"
+        android:enabled="false"
+        android:targetActivity=".MainActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity-alias>
+```
 ```js
-import { multiply } from "react-native-multiple-launch-icon";
+import { changeIcon } from "react-native-multiple-launch-icon";
 
-// ...
-
-const result = await multiply(3, 7);
+// activity name
+changeIcon('.RED');
 ```
 
 ## Contributing

@@ -17,6 +17,6 @@ const MultipleLaunchIcon = NativeModules.MultipleLaunchIcon
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return MultipleLaunchIcon.multiply(a, b);
+export function changeIcon(a: string): Promise<number> {
+  return MultipleLaunchIcon.changeIcon(a);
 }
