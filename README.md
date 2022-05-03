@@ -1,6 +1,6 @@
 # react-native-multiple-launch-icon
 
- multiple launch icon for react native
+ multiple launch icon for react native (Only for Android)
 
 ## Installation
 
